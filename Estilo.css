@@ -7,7 +7,6 @@
     background-image: url(https://scontent.fopo3-1.fna.fbcdn.net/v/t39.30808-6/326917617_900151921180186_5798310225250752576_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=USabJbDnnHsAX_KK9Bi&_nc_ht=scontent.fopo3-1.fna&oh=00_AfASLESQYAmO3RKQngvliXHH_GePnU_nn2IX_sQuETnp9g&oe=64D694DA);
     Background-position: center center;
     background-size: cover;
-    background-color: whitesmoke opacity: 0.2;
 }
 .magicclass {
     width: 100%;
@@ -53,7 +52,7 @@ button {
     transition:.3s;
     border-radius: 2px;
     background-color:rgba(150, 183, 184, 0.368);
-    box-shadow: 2px 2px yellow
+    box-shadow: 2px 2px rgb(175, 175, 175)
 }
 .divimagens {
     width: 100%;

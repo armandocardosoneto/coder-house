@@ -1,6 +1,94 @@
-body {margin: 0;}
-header {background-image: url("https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/07/05/a9713c80-0f5a-475b-bcc6-5d8ea19f0f20/magic-the-gathering.jpg") }
-header h1 {color: yellow}
-header h2 {color: yellow}
-section h3 {background-color: blue}
-p {background-color: pink}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+#bodyid {
+    background-image: url(https://scontent.fopo3-1.fna.fbcdn.net/v/t39.30808-6/326917617_900151921180186_5798310225250752576_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=USabJbDnnHsAX_KK9Bi&_nc_ht=scontent.fopo3-1.fna&oh=00_AfASLESQYAmO3RKQngvliXHH_GePnU_nn2IX_sQuETnp9g&oe=64D694DA);
+    Background-position: center center;
+    background-size: cover;
+    background-color: whitesmoke opacity: 0.2;
+}
+.magicclass {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.gatheringclass {
+    width: 100%;
+    height: 45px;
+    text-align: center
+}
+.mainstyle {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.sectionIntroducao{
+    width: 25%;
+    height: 40px;
+    text-align: center;
+}
+.sectionRegras {
+    width: 25%;
+    height: 40px;
+    text-align: center
+}
+.sectionConjunto {
+    width: 25%;
+    height: 40px;
+    text-align: center
+}
+.sectionGlossario {
+    width: 25%;
+    height: 40px;
+    text-align: center
+}
+button {
+    border: 2px;
+    padding: 5px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition:.3s;
+    border-radius: 2px;
+    background-color:rgba(150, 183, 184, 0.368);
+    box-shadow: 2px 2px yellow
+}
+.divimagens {
+    width: 100%;
+    height: 205px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.imagem1 {
+    width: 20%;
+    height: 140px;
+    padding: 20px 20px;
+    opacity: 0.9;
+}
+.imagem2 {
+    width: 20%;
+    height: 140px;
+    padding: 20px 20px;
+    opacity: 0.9;
+}
+.imagem3 {
+    width: 20%;
+    height: 140px;
+    padding: 20px 20px;
+    opacity: 0.9;
+}
+.imagem4 {
+    width: 20%;
+    height: 140px;
+    padding: 20px 20px;
+    opacity: 0.9;
+}
+.imagem5 {
+    width: 20%;
+    height: 140px;
+    padding: 20px 20px;
+    opacity: 0.9;
+}

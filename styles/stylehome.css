@@ -67,11 +67,19 @@ button {
     padding: 20px 20px;
     opacity: 0.9;
 }
+.imagem1:hover {
+    transform: scale(1.15);
+    transition:.3s;
+}
 .imagem2 {
     width: 20%;
     height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
+}
+.imagem2:hover {
+    transform: scale(1.15);
+    transition:.3s;
 }
 .imagem3 {
     width: 20%;
@@ -79,17 +87,29 @@ button {
     padding: 20px 20px;
     opacity: 0.9;
 }
+.imagem3:hover {
+    transform: scale(1.15);
+    transition:.3s;
+}
 .imagem4 {
     width: 20%;
     height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
 }
+.imagem4:hover {
+    transform: scale(1.15);
+    transition:.3s;
+}
 .imagem5 {
     width: 20%;
     height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
+}
+.imagem5:hover {
+    transform: scale(1.15);
+    transition:.3s;
 }
 .footer {
     width: 100%;

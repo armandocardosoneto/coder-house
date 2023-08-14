@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.bodyclass {
+    background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/fundo.png?raw=true);
+    Background-position: center center;
+    background-size: cover;
+}
+.bottonhome {
+    border: 4px;
+    margin: 6px;
+    padding: 10px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition:.3s;
+    border-radius: 2px;
+    background-color:rgba(150, 183, 184, 0.368);
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    font-weight: bolder;
+}
+.logoclass {
+    width: 200px;
+    height: 196px;
+    margin: auto;
+    display: block;
+}
+.magicclass {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.gatheringclass {
+    width: 100%;
+    height: 30px;
+    text-align: center
+}
+.classregrasemec {
+    font-weight: bolder;
+    color: rgb(176, 18, 18);
+    text-align: center;
+}
+.mainclass {
+    margin: 50px;
+    height: auto;
+}
+.classrules {
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(204, 99, 99);
+}

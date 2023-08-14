@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.bodyclass {
+    background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/fundo.png?raw=true);
+    Background-position: center center;
+    background-size: cover;
+}
+.logoclass {
+    width: 200px;
+    height: 196px;
+    margin: auto;
+    display: block;
+}
+.magicclass {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.gatheringclass {
+    width: 100%;
+    height: 30px;
+    text-align: center
+}
+.classprimeiro {
+    font-weight: bolder;
+    color: rgb(176, 18, 18);
+    text-align: center;
+}
+.bottonhome {
+    border: 4px;
+    margin: 6px;
+    padding: 10px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition:.3s;
+    border-radius: 2px;
+    background-color:rgba(150, 183, 184, 0.368);
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    font-weight: bolder;
+}
+.oqvou {
+    margin: 50px;
+    height: auto;
+    font-weight: bolder;
+}
+.vouprecisar {
+    margin: 50px;
+    height: auto;
+}
+.maintipos {
+    width: 100%;
+    height: 600px;;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.criatura {
+    width: 20%;
+    height: 520px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    text-decoration: solid;
+    background-color:rgba(150, 183, 184, 0.368);
+}
+.artefatos {
+    width: 20%;
+    height: 520px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    text-decoration: solid;
+    background-color:rgba(150, 183, 184, 0.368);
+}
+.encantamentos {
+    width: 20%;
+    height: 520px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    text-decoration: solid;
+    background-color:rgba(150, 183, 184, 0.368);
+}
+.feiticos {
+    width: 20%;
+    height: 520px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    text-decoration: solid;
+    background-color:rgba(150, 183, 184, 0.368);
+}
+.footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(204, 99, 99);
+}
+.classfases {
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bolder;
+}

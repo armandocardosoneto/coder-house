@@ -40,3 +40,14 @@
     background-color:rgba(150, 183, 184, 0.368);
     box-shadow: 2px 2px rgb(175, 175, 175)
 }
+.oqvou {
+    margin: 50px;
+    height: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+.vouprecisar {
+    margin: 50px;
+    height: auto;
+    font-weight: bolder;
+}

@@ -8,6 +8,18 @@
     Background-position: center center;
     background-size: cover;
 }
+.bottonhome {
+    border: 4px;
+    margin: 6px;
+    padding: 10px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition:.3s;
+    border-radius: 2px;
+    background-color:rgba(150, 183, 184, 0.368);
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    font-weight: bolder;
+}
 .logoclass {
     width: 200px;
     height: 196px;
@@ -24,70 +36,21 @@
     height: 30px;
     text-align: center
 }
-.classprimeiro {
+.classregrasemec {
     font-weight: bolder;
     color: rgb(176, 18, 18);
     text-align: center;
 }
-.bottonhome {
-    border: 4px;
-    margin: 6px;
-    padding: 10px;
-    text-decoration: solid;
-    cursor: pointer;
-    transition:.3s;
-    border-radius: 2px;
-    background-color:rgba(150, 183, 184, 0.368);
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    font-weight: bolder;
-}
-.oqvou {
-    margin: 50px;
-    height: auto;
-    font-weight: bolder;
-}
-.vouprecisar {
+.mainclass {
     margin: 50px;
     height: auto;
 }
-.maintipos {
+.classrules {
     width: 100%;
-    height: 600px;;
-    display: flex;
+    height: 20px;
+    margin-top: 30px;
     text-align: center;
-    justify-content: center;
-}
-.criatura {
-    width: 20%;
-    height: 520px;
-    padding: 20px 20px;
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
-}
-.artefatos {
-    width: 20%;
-    height: 520px;
-    padding: 20px 20px;
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
-}
-.encantamentos {
-    width: 20%;
-    height: 520px;
-    padding: 20px 20px;
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
-}
-.feiticos {
-    width: 20%;
-    height: 520px;
-    padding: 20px 20px;
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
+    font-weight: bolder;
 }
 .footer {
     width: 100%;
@@ -95,11 +58,4 @@
     text-align: center;
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
-}
-.classfases {
-    width: 100%;
-    height: 20px;
-    margin-top: 30px;
-    text-align: center;
-    font-weight: bolder;
 }

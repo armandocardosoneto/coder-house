@@ -17,7 +17,9 @@ animation: muda-logo 6s infinite;
 50% {transform: scale(1) rotate(0deg);}
 75% {transform: scale(1.05) rotate(-5deg);}
 100% {transform: scale(1) rotate(0deg);}
-
+}
+header{
+text-align: center;
 }
 .magicclass {
     width: 100%;

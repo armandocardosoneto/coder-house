@@ -69,6 +69,7 @@ button {
 button:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(250%);
 }
 .divimagens {
     width: 100%;
@@ -86,6 +87,7 @@ button:hover {
 .imagem1:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(200%)
 }
 .imagem2 {
     width: 20%;
@@ -96,6 +98,7 @@ button:hover {
 .imagem2:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(200%)
 }
 .imagem3 {
     width: 20%;
@@ -106,6 +109,7 @@ button:hover {
 .imagem3:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(108%)
 }
 .imagem4 {
     width: 20%;
@@ -116,6 +120,7 @@ button:hover {
 .imagem4:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(200%)
 }
 .imagem5 {
     width: 20%;
@@ -126,6 +131,7 @@ button:hover {
 .imagem5:hover {
     transform: scale(1.15);
     transition:.3s;
+    filter: brightness(200%)
 }
 .footer {
     width: 100%;

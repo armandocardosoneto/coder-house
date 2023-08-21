@@ -133,6 +133,16 @@ button:hover {
     transition:.3s;
     filter: brightness(200%)
 }
+.divimagens img {
+    animation: muda-logo 6s infinite;
+    }
+    @keyframes muda-logo {
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.05) rotate(5deg);}
+    50% {transform: scale(1) rotate(0deg);}
+    75% {transform: scale(1.05) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+    }
 .footer {
     width: 100%;
     height: 20px;

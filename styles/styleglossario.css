@@ -60,22 +60,66 @@ animation: muda-logo 6s infinite;
     color: rgb(5, 69, 138);
     text-align: center;
 }
-.mainclass {
-    width: auto;
-    height: 2150px;
+main {
+    display: flex;
+}
+.grid {
+    display: grid;
+    /*5 colunas*/
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    /*8 linhas*/
+    grid-template-rows: 200px 380px 300px 280px 280px 370px 290px 300px;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: stretch;
+    width: 1040px;
+    height: 2800px;
+
 }
 .divclass {
     border: auto;
     margin: 20px;
     padding: auto;
     height: 30px;
-    
 }
 .divclass:hover {
     transform: scale(1.03);
     transition:.5s;
     font-weight: bold;
 }
+.gridaside {
+    position: left;
+    display: grid;
+    /*1 colunas*/
+    grid-template-columns: 200px;
+    /*5 linhas*/
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: stretch;
+    width: 210px;
+    height: 2550px;
+}
+.imageclass {
+    border: auto;
+    margin: 50px;
+    padding: auto;
+    height: 70px;
+}
+.imageclass:hover {
+    transform: scale(1.5);
+    transition:.5s;
+}
+.imageclass img {
+    animation: muda-logo 6s infinite;
+    }
+    @keyframes muda-logo {
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.05) rotate(5deg);}
+    50% {transform: scale(1) rotate(0deg);}
+    75% {transform: scale(1.05) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+    }
 .classfooter {
     width: 100%;
     height: 20px;

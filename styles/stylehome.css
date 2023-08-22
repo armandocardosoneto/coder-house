@@ -18,8 +18,10 @@ animation: muda-logo 6s infinite;
 75% {transform: scale(1.05) rotate(-5deg);}
 100% {transform: scale(1) rotate(0deg);}
 }
-header{
-text-align: center;
+header img {
+    display: block;
+    width: 200px;
+    margin: 17px auto 0 auto;
 }
 .magicclass {
     width: 100%;
@@ -149,4 +151,6 @@ button:hover {
     text-align: center;
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
+    padding: 8px 0;
+    margin-top: 20px;
 }

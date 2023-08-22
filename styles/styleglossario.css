@@ -126,3 +126,22 @@ main {
     font-weight: bolder;
     background-color: rgb(88, 133, 181);
 }
+
+/*Configuração para mobile*/
+@media only screen and (max-width: 490px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 3000px;
+        row-gap: 5px;
+    }
+    .gridaside {
+        display: none;
+    }
+    .divclass {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}

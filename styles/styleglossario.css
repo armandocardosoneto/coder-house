@@ -1,91 +1,123 @@
-*{
-    margin:0;
-    padding:0;
-    border:0;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
 .bodyclass {
     background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/bgluzglossario.png?raw=true);
     Background-position: center center;
     background-size: cover;
 }
+
 header img {
-animation: muda-logo 6s infinite;
+    animation: muda-logo 6s infinite;
 }
+
 @keyframes muda-logo {
-0% {transform: scale(1) rotate(0deg);}
-25% {transform: scale(1.05) rotate(5deg);}
-50% {transform: scale(1) rotate(0deg);}
-75% {transform: scale(1.05) rotate(-5deg);}
-100% {transform: scale(1) rotate(0deg);}
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
+
 .bottonhome {
     border: 4px;
     margin: 6px;
     padding: 10px;
     text-decoration: solid;
     cursor: pointer;
-    transition:.3s;
+    transition: .3s;
     border-radius: 2px;
-    background-color:rgb(88, 133, 181);
+    background-color: rgb(88, 133, 181);
     box-shadow: 2px 2px rgb(175, 175, 175);
     font-weight: bolder;
 }
+
 .bottonhome:hover {
     transform: scale(1.2);
-    transition:.3s;
+    transition: .3s;
     font-weight: bold;
 }
+
 .logoclass {
     width: 200px;
     height: 196px;
     margin: auto;
     display: block;
 }
+
 .logoclass:hover {
     transform: scale(1.15);
-    transition:.3s;
+    transition: .3s;
 }
+
 .magicclass {
     width: 100%;
     height: 30px;
     text-align: center;
 }
+
 .gatheringclass {
     width: 100%;
     height: 30px;
     text-align: center
 }
+
 .classglossario {
     font-weight: bolder;
     color: rgb(5, 69, 138);
     text-align: center;
 }
+
 main {
     display: flex;
 }
+
 .grid {
-    display: grid;
-    /*5 colunas*/
-    grid-template-columns: 200px 200px 200px 200px 200px;
-    /*8 linhas*/
-    grid-template-rows: 200px 380px 300px 280px 280px 370px 290px 300px;
-    column-gap: 5px;
-    row-gap: 5px;
-    justify-items: stretch;
-    width: 1040px;
-    height: 2800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-.divclass {
+
+/* .divclass {
     border: auto;
     margin: 20px;
     padding: auto;
     height: 30px;
+} */
+.divclass {
+    border: auto;
+    /* margin: 20px; */
+    margin: 20px 15px;
+    padding: auto;
+    transition: .5s;
+    /* width: 20%; */
+    /*flex-basis também pode ser usado para determinar a largura de itens flex (Flexbox)*/
+    flex-basis: 20%;
 }
+
 .divclass:hover {
     transform: scale(1.03);
-    transition:.5s;
+    /* transition:.5s; */
     font-weight: bold;
 }
+
 .gridaside {
     position: left;
     display: grid;
@@ -99,56 +131,103 @@ main {
     width: 210px;
     height: 2550px;
 }
+
 .imageclass {
     border: auto;
     margin: 50px;
     padding: auto;
     height: 70px;
 }
+
 .imageclass:hover {
     transform: scale(1.5);
-    transition:.5s;
+    transition: .5s;
 }
+
 .imageclass img {
     animation: muda-logo 6s infinite;
+}
+
+@keyframes muda-logo {
+    0% {
+        transform: scale(1) rotate(0deg);
     }
-    @keyframes muda-logo {
-    0% {transform: scale(1) rotate(0deg);}
-    25% {transform: scale(1.05) rotate(5deg);}
-    50% {transform: scale(1) rotate(0deg);}
-    75% {transform: scale(1.05) rotate(-5deg);}
-    100% {transform: scale(1) rotate(0deg);}
+
+    25% {
+        transform: scale(1.05) rotate(5deg);
     }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
 .classfooter {
     width: 100%;
-    height: 20px;
+    /* height: 20px; */
+    padding: 10px 0;
     text-align: center;
     font-weight: bolder;
     background-color: rgb(88, 133, 181);
-    padding: 8px 0;
-    margin-top: 20px;
 }
 
 /*Configuração para mobile*/
-@media only screen and (max-width: 490px) {
+@media screen and (max-width: 900px) {
+    .divclass {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .divclass {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .divclass {
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 490px) {
     .grid {
         flex-direction: column;
         justify-content: center;
         height: auto;
         row-gap: auto;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
+        margin-bottom: 25px;
+
         display: grid;
-        /*1 colunas*/
         grid-template-columns: 400px;
-        /*43 linhas*/
         grid-template-rows: auto;
     }
-    .gridaside {
-        display: none;
-    }
+
     .divclass {
         width: 90%;
         height: auto;
         margin-bottom: 20px;
+    }
+
+    .gridaside {
+        display: none;
+    }
+
+    .classfooter {
+        width: 100%;
+        /* height: 50px; */
+        padding: 10px 0;
+        text-align: center;
+        font-weight: bolder;
+        background-color: rgb(88, 133, 181);
     }
 }

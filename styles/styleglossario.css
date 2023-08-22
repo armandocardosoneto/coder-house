@@ -130,18 +130,23 @@ main {
 /*Configuração para mobile*/
 @media only screen and (max-width: 490px) {
     .grid {
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
-        height: 4000px;
-        row-gap: 5px;
+        height: auto;
+        row-gap: auto;
+        margin-bottom: 60px;
+        display: grid;
+        /*1 colunas*/
+        grid-template-columns: 400px;
+        /*43 linhas*/
+        grid-template-rows: auto;
     }
     .gridaside {
         display: none;
     }
     .divclass {
         width: 90%;
-        margin-bottom: 40px;
+        height: auto;
+        margin-bottom: 20px;
     }
 }

@@ -125,6 +125,8 @@ main {
     text-align: center;
     font-weight: bolder;
     background-color: rgb(88, 133, 181);
+    padding: 8px 0;
+    margin-top: 20px;
 }
 
 /*Configuração para mobile*/

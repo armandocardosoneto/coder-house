@@ -134,7 +134,7 @@ main {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        height: 3000px;
+        height: 4000px;
         row-gap: 5px;
     }
     .gridaside {

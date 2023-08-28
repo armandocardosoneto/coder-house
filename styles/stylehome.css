@@ -7,6 +7,7 @@
     background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/bghome.jpg?raw=true);
     Background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 header img {
 animation: muda-logo 6s infinite;

@@ -208,7 +208,7 @@ main {
         margin-bottom: 25px;
 
         display: grid;
-        grid-template-columns: 400px;
+        grid-template-columns: 390px;
         grid-template-rows: auto;
         text-align: justify;
     }

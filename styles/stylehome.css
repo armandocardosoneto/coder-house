@@ -185,6 +185,7 @@ button:hover {
         width: auto;
         display: flex;
         height: 70px;
+        justify-content: space-between;
     }
 
     .divimagens {

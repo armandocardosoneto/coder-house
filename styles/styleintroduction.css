@@ -134,6 +134,7 @@ animation: muda-logo 6s infinite;
         width: auto;
         height: auto;
         margin-top: 20px;
+        text-align: justify;
     }
 
     .maintipos {
@@ -147,6 +148,11 @@ animation: muda-logo 6s infinite;
         margin-left: 15px;
         margin-right: 15px;
         margin-top: 20px;
+        text-align: justify;
+    }
+
+    h4 {
+        text-align: center;
     }
 
     .bottonhome {

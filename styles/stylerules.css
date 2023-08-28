@@ -99,6 +99,16 @@ animation: muda-logo 6s infinite;
         width: auto;
         height: auto;
         margin-top: 40px;
+        text-align: justify;
+    }
+
+    .bottonhome {
+        border: 4px;
+        margin: 7px;
+        padding: 10px;
+        text-decoration: solid;
+        border-radius: 3px;
+        background-color:rgb(222, 20, 100);
     }
 
     .footer {

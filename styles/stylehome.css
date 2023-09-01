@@ -4,7 +4,7 @@
     border: 0;
 }
 #bodyid {
-    background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/bghome.jpg?raw=true);
+    background-image: url(../images/bghome.jpg);
     Background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

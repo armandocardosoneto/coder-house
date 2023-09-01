@@ -1,13 +1,14 @@
-*{
-    margin:0;
-    padding:0;
-    border:0;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 #bodyid {
     background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/bghome.jpg?raw=true);
     Background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 header img {
 animation: muda-logo 6s infinite;
@@ -64,78 +65,34 @@ button {
     padding: 5px;
     text-decoration: solid;
     cursor: pointer;
-    transition:.3s;
     border-radius: 2px;
     background-color:rgba(150, 183, 184, 0.368);
-    box-shadow: 2px 2px rgb(175, 175, 175)
+    box-shadow: 2px 2px rgb(175, 175, 175);
+    font-size: 14px;
+    transition: .3s;
 }
 button:hover {
     transform: scale(1.15);
-    transition:.3s;
     filter: brightness(250%);
 }
 .divimagens {
     width: 100%;
-    height: 205px;
+    height: auto;
     display: flex;
     text-align: center;
     justify-content: center;
 }
-.imagem1 {
+.divimagens div {
     width: 20%;
     height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
-}
-.imagem1:hover {
-    transform: scale(1.15);
     transition:.3s;
-    filter: brightness(200%)
 }
-.imagem2 {
-    width: 20%;
-    height: 140px;
-    padding: 20px 20px;
-    opacity: 0.9;
-}
-.imagem2:hover {
+.divimagens div:hover {
     transform: scale(1.15);
-    transition:.3s;
-    filter: brightness(200%)
 }
-.imagem3 {
-    width: 20%;
-    height: 140px;
-    padding: 20px 20px;
-    opacity: 0.9;
-}
-.imagem3:hover {
-    transform: scale(1.15);
-    transition:.3s;
-    filter: brightness(108%)
-}
-.imagem4 {
-    width: 20%;
-    height: 140px;
-    padding: 20px 20px;
-    opacity: 0.9;
-}
-.imagem4:hover {
-    transform: scale(1.15);
-    transition:.3s;
-    filter: brightness(200%)
-}
-.imagem5 {
-    width: 20%;
-    height: 140px;
-    padding: 20px 20px;
-    opacity: 0.9;
-}
-.imagem5:hover {
-    transform: scale(1.15);
-    transition:.3s;
-    filter: brightness(200%)
-}
+
 .divimagens img {
     animation: muda-logo 6s infinite;
     }
@@ -153,34 +110,12 @@ button:hover {
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
     padding: 8px 0;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 /*Configuração para mobile*/
-@media screen and (max-width: 900px) {
-    .bodyclass .logoclass {
-        flex-basis: 25%;
-    }
-}
 
-@media screen and (max-width: 650px) {
-    .bodyclass {
-        flex-basis: 40%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .bodyclass {
-        flex-basis: 80%;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .bodyclass {
-        width: auto;
-        height: auto;
-        margin-top: 20px;
-    }
+@media screen and (max-width: 750px) {
 
     .mainstyle {
         width: auto;
@@ -190,11 +125,11 @@ button:hover {
     }
 
     .divimagens {
-        display: grid;
         flex-direction: column;
-        height: 900px;
+        align-items: center;
         margin-top: 15px;
         margin-bottom: 20px;
+        row-gap: 1rem;
     }
 
     button {
@@ -204,15 +139,21 @@ button:hover {
         text-decoration: solid;
         border-radius: 10px;
         background-color:rgb(252, 252, 3);
+        font-size: 12px;
     }
 
     .footer {
         width: 100%;
-        /* height: 100px; */
-        padding: 22px 0;
+        padding: 15px 0 20px 0;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 40px;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        font-size: 10px;
     }
 }

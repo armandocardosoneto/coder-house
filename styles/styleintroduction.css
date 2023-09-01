@@ -1,44 +1,54 @@
-*{
+* {
     margin:0;
     padding:0;
     border:0;
+    box-sizing: border-box;
 }
+
 .bodyclass {
-    background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/fundo.png?raw=true);
+    background-image: url(../images/fundo.png);
     Background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .logoclass {
     width: 200px;
     height: 196px;
     margin: auto;
     display: block;
 }
+
 header img {
-animation: muda-logo 6s infinite;
+    animation: muda-logo 6s infinite;
 }
 @keyframes muda-logo {
-0% {transform: scale(1) rotate(0deg);}
-25% {transform: scale(1.05) rotate(5deg);}
-50% {transform: scale(1) rotate(0deg);}
-75% {transform: scale(1.05) rotate(-5deg);}
-100% {transform: scale(1) rotate(0deg);}
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.05) rotate(5deg);}
+    50% {transform: scale(1) rotate(0deg);}
+    75% {transform: scale(1.05) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
+
 .magicclass {
     width: 100%;
     height: 30px;
     text-align: center;
 }
+
 .gatheringclass {
     width: 100%;
     height: 30px;
     text-align: center
 }
+
 .classprimeiro {
     font-weight: bolder;
     color: rgb(176, 18, 18);
     text-align: center;
+    margin-bottom: 12px;
 }
+
 .bottonhome {
     border: 4px;
     margin: 6px;
@@ -56,57 +66,64 @@ animation: muda-logo 6s infinite;
     transition:.3s;
     font-weight: bold;
 }
+
+h4 {
+    text-align: center;
+}
+
 .oqvou {
-    margin: 50px;
+    margin: 25px 0;
     height: auto;
     font-weight: bolder;
 }
+
 .vouprecisar {
     margin: 50px;
     height: auto;
+    text-align: justify;
 }
+
+.vouprecisar li {
+    margin-bottom: 8px;
+}
+
 .maintipos {
     display: grid;
-    /*4 colunas*/
-    grid-template-columns: 310px 310px 310px 310px;
-    /*1 linhas*/
-    grid-template-rows:470px;
-    column-gap: 5px;
-    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    text-align: justify;
     justify-content: space-evenly;
+    padding: 0 12px;
 }
-.criatura {
+
+.maintipos div {
+    padding: 12px 17px;
     box-shadow: 2px 2px rgb(175, 175, 175);
     text-decoration: solid;
     background-color:rgba(150, 183, 184, 0.368);
 }
-.artefatos {
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
+
+.maintipos div h4 {
+    margin: 8px 0 10px 0;
 }
-.encantamentos {
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
+
+.maintipos div p {
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
-.feiticos {
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
-}
+
 .footer {
     width: 100%;
-    height: 20px;
     text-align: center;
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
+    margin-top: 20px;
+    padding: 10px 0;
 }
+
 .classfases {
-    width: 100%;
     height: 20px;
-    margin-top: 30px;
-    text-align: center;
+    margin: 30px 0 8px 0;
     font-weight: bolder;
 }
 
@@ -114,6 +131,10 @@ animation: muda-logo 6s infinite;
 @media screen and (max-width: 900px) {
     .bodyclass .logoclass {
         flex-basis: 25%;
+    }
+
+    .maintipos {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -127,6 +148,10 @@ animation: muda-logo 6s infinite;
     .bodyclass {
         flex-basis: 80%;
     }
+
+    .maintipos {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -135,24 +160,6 @@ animation: muda-logo 6s infinite;
         height: auto;
         margin-top: 20px;
         text-align: justify;
-    }
-
-    .maintipos {
-        display: grid;
-        /*1 colunas*/
-        grid-template-columns: auto;
-        /*4 linhas*/
-        grid-template-rows:auto;
-        row-gap: 15px;
-        text-align: center;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 20px;
-        text-align: justify;
-    }
-
-    h4 {
-        text-align: center;
     }
 
     .bottonhome {
@@ -166,7 +173,6 @@ animation: muda-logo 6s infinite;
 
     .footer {
         width: 100%;
-        /* height: 100px; */
         padding: 22px 0;
         text-align: center;
         margin-top: 15px;

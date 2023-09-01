@@ -4,9 +4,10 @@
     border:0;
 }
 .bodyclass {
-    background-image: url(https://github.com/armandocardosoneto/coder-house/blob/main/images/fundo.png?raw=true);
+    background-image: url(../images/fundo.png);
     Background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .bottonhome {
     border: 4px;

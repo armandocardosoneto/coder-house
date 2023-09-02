@@ -73,7 +73,7 @@ button {
 }
 button:hover {
     transform: scale(1.15);
-    filter: brightness(550%);
+    filter: brightness(200%);
 }
 .divimagens {
     width: 100%;
@@ -91,6 +91,7 @@ button:hover {
 }
 .divimagens div:hover {
     transform: scale(1.15);
+    filter: brightness(120%);
 }
 
 .divimagens img {

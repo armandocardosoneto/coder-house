@@ -71,10 +71,11 @@ animation: muda-logo 6s infinite;
 }
 .footer {
     width: 100%;
-    height: 20px;
     text-align: center;
     font-weight: bolder;
-    background-color: rgb(204, 99, 99);
+    background-color: rgb(204, 99, 99);   
+    padding: 8px 0;
+    margin-top: 25px;
 }
 
 /*Configuração para mobile*/

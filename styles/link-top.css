@@ -1,0 +1,40 @@
+/* Gera um efeito de scroll suavizado */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Link para o topo da página */
+.link-top {
+    font-size: calc(.7rem + .55vw);
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    background-color: #db9004;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+.link-top:hover {
+    background-color: black;
+    color: #db9004;
+    border: 2px solid #db9004;
+}
+.show-link {
+    visibility: visible;
+    opacity: 1;
+    z-index: 4;
+}

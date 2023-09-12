@@ -1,0 +1,12 @@
+/*remove estilos sobreescritos pelo bootstrap*/
+h1 {
+    font-size: 190%;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+h4 {
+    font-size: 120%;
+}

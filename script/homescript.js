@@ -1,3 +1,3 @@
-alert("AQUI A MAGICA COMEÇA")
+alert("AQUI A MÁGICA COMEÇA")
 
 nomedafuncao("")

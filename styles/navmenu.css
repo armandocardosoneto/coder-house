@@ -1,0 +1,150 @@
+header {
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: inherit;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .45);
+    border-bottom: 2px solid white;
+    transition: all .7s;
+}
+/*Muda o background de Menu de navegação ao fazer o scroll vertical (100px ou maior) da página*/
+.nav.change-bg {
+    background-color: rgba(0, 0, 0, .95);
+}
+
+.navmenu {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu li {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+.navmenu a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.8px;
+    color: #dfdfdf;
+    letter-spacing: .5px;
+    position: relative;
+}
+
+/*Sublinhado surge ao passar o cursor sobre os links, com uso das pseude-classes "before" e "after"*/
+.navmenu a::before,
+.navmenu a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: all .5s;
+}
+
+.navmenu a::before {
+    left: 50%;
+}
+
+.navmenu a::after {
+    right: 50%;
+}
+
+.navmenu a:hover::before,
+.navmenu a:hover::after {
+    width: 50%;
+}
+
+/*A classe active deixa o link selecionado em formato negrito e com a cor rosa um pouco escuro*/
+.navmenu .active {
+    font-weight: bold;
+    color: #f37e7e;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    display: none;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transform-origin: right;
+    transition: all .5s;
+}
+.hamburger-menu .line:last-child {
+    margin-bottom: 0;
+}
+
+@keyframes bounce {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/*O hamburger-menu muda ao ser aplicada a classe change-menu*/
+.hamburger-menu.change-menu .line:first-child {
+    transform: rotate(-45deg) translate(1px);
+}
+
+.hamburger-menu.change-menu .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.change-menu .line:last-child {
+    transform: rotate(45deg) translate(1px);
+}
+
+/*Espaçameto superior para os elementos dentro da div com a classe "logo-titles". Essa div está em todas as páginas.*/
+.logo-titles {
+    padding-top: 60px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 800px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    /*Menu de navegação muda ao aplicar a classe "change-nav para telas menores*/
+    .nav.change-nav {
+        height: 160px;
+        background-color: rgba(0, 0, 0, .75);
+    }
+
+    .nav.change-nav .navmenu {
+        margin-left: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    .navmenu a {        
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav.change-nav .navmenu a {        
+        opacity: 1;
+        visibility: visible;
+        transition: all .05s .5s;
+        font-size: 14px;
+    }
+}

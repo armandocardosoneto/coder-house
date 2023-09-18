@@ -60,6 +60,7 @@ animation: muda-logo 6s infinite;
     background-color: rgb(204, 99, 99);   
     padding: 8px 0;
     margin-top: 25px;
+    border-top: 2px solid white;
 }
 
 /*Configuração para mobile*/
@@ -105,5 +106,6 @@ animation: muda-logo 6s infinite;
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
 }
 
+.logo-titles {
+    padding-top: 60px; 
+}
+
 .logoclass {
     width: 200px;
     height: 196px;
@@ -165,5 +169,6 @@ h4 {
         margin-top: 15px;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

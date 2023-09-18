@@ -115,6 +115,7 @@ button {
     text-align: center;
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
+    border-top: 2px solid white;
 }
 
 /*Configuração para mobile*/
@@ -157,5 +158,6 @@ button {
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

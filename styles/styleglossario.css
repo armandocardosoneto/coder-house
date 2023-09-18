@@ -147,6 +147,7 @@ main {
     text-align: center;
     font-weight: bolder;
     background-color: rgb(88, 133, 181);
+    border-top: 2px solid white;
 }
 
 /*Configuração para mobile*/
@@ -198,5 +199,6 @@ main {
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

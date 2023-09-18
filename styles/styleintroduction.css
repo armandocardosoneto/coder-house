@@ -81,9 +81,11 @@ h4 {
 
 .maintipos div {
     padding: 12px 17px;
-    box-shadow: 2px 2px rgb(175, 175, 175);
+    box-shadow: 4px 4px 4px rgb(140, 140, 140), 4px 4px 4px rgb(140, 140, 140), 4px 4px 4px rgb(140, 140, 140);
+    border: 2px solid white;
+    border-radius: 5px;
     text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);
+    background-color:rgba(150, 183, 184, 0.368);  
 }
 
 .maintipos div h4 {
@@ -95,6 +97,7 @@ h4 {
     line-height: 1.2;
 }
 
+
 .footer {
     width: 100%;
     text-align: center;
@@ -102,6 +105,7 @@ h4 {
     background-color: rgb(204, 99, 99);
     margin-top: 20px;
     padding: 10px 0;
+    border-top: 2px solid white;
 }
 
 .classfases {

@@ -10,6 +10,10 @@
     background-repeat: no-repeat;
 }
 
+.logo-titles {
+    padding-top: 60px; 
+}
+
 .logoclass {
     width: 200px;
     height: 196px;

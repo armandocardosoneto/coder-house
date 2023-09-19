@@ -6,12 +6,45 @@
     <meta name="Magic: The Gathering for beginners"
         content="Magic: The gathering cards and other informations about the Magic and how to play">
     <title>MAGIC: The Gathering</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="./styles/stylehome.css" />
 </head>
 
 <body id="bodyid">
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/introducao.html">INTRODUÇÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/regrasemecanicas.html">REGRAS E MECÂNICAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./conjuntodecartaseconstrucaodedeck.html">CONJUNTO DE CARTAS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./glossario.html">GLOSSÁRIO</a>
+                    </li>
+                </ul>
+                <div class="hamburger-menu">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </div>
+            </div>
+        </nav>
         <img src="./images/logo.png">
         <h1 class="magicclass">MAGIC</h1>
         <h3 class="gatheringclass">THE GATHERING</h3>
@@ -27,7 +60,9 @@
         </section>
 
         <section class="sectionConjunto">
-            <a href="./pages/conjuntodecartaseconstrucaodedeck.html"><button><strong>CONJUNTO DE CARTAS</strong></button></a>
+            <a href="./pages/conjuntodecartaseconstrucaodedeck.html"><button><strong>CONJUNTO DE CARTAS
+
+            </strong></button></a>
         </section>
 
         <section class="sectionGlossario"><a

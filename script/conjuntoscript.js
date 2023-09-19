@@ -1,21 +1,32 @@
-//strings = ""/''
-//number = 1,2,3
-//boolean - true ou false
-//array = ['strings','string']
-//object = {nome: ''}
+const ApiUrl = "https://api.magicthegathering.io/v1/"
 
-var cards = [
-    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130550&type=card", 
-    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129710&type=card", 
-    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129465&type=card", 
-    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129711&type=card"
-];
+async function getCards(_countCards, _Path) {
+    const countCards = 10;
+    const pageSize = "?pagesize=";
+    const path = "cards";
+    const endpoint = ApiUrl + path + pageSize + countCards;
 
-//for (var i = 0; i < cards.length; i++) {
-//...const ulElement = document.getElementById("#lista");
-//...const liElement = document.createElement("li");
-//...const imgElement = document.createElement("img");
-//...imgElement.scr = cards[i];
-//...liElement.append(imgElement);
-//...ulElement.append(liElement);
-// }
+    //https://api.magicthegathering.io/v1/cards?pageSize=10
+
+    try {
+        const response = await fetch(endpoint, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        });
+
+        return await response.json();
+    } catch (error) {
+        console.error("error:", error);
+    }
+}
+
+funcion listCardsInView() {
+    const cardList = getCards(5, "cards")
+        .then(function (response) {
+            console.log(response)
+        }).catch(function (err) {
+            console.log(err)
+        })
+}

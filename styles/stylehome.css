@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    height: auto;
 }
 header img {
 animation: muda-logo 6s infinite;
@@ -40,21 +41,7 @@ header img {
     height: 60px;
     display: flex;
 }
-button {
-    border: 2px;
-    padding: 5px;
-    text-decoration: solid;
-    cursor: pointer;
-    border-radius: 2px;
-    background-color:rgba(150, 183, 184, 0.368);
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    font-size: 14px;
-    transition: .3s;
-}
-button:hover {
-    transform: scale(1.15);
-    filter: brightness(200%);
-}
+
 .divimagens {
     width: 100%;
     height: auto;
@@ -115,15 +102,6 @@ button:hover {
         row-gap: 1rem;
     }
 
-    button {
-        border: 4px;
-        margin: 7px;
-        padding: 5px;
-        text-decoration: solid;
-        border-radius: 10px;
-        background-color:rgb(252, 252, 3);
-        font-size: 12px;
-    }
 
     .footer {
         width: 100%;

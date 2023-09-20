@@ -4,14 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <meta name="Magic: The Gathering for beginners" content="Magic: The gathering first steps">
-    <title>MAGIC: The Gathering</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>MAGIC: The Gathering</title>   
     <!--Font Awesome Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
     <link rel="stylesheet" href="../styles/fix-framework.css">
     <link rel="stylesheet" href="../styles/link-top.css">
@@ -19,31 +14,30 @@
     <link rel="stylesheet" href="../styles/styleintroduction.css" />
 </head>
 
-<body class="bodyclass">
+<body class="bodyclass" id="intro-page">
     <header id="intro">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="../index.html">HOME</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="nav">
+            <ul class="navmenu">
+                <li class="navmenu-item">
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li class="navmenu-item">
+                    <a href="./introducao.html" class="active">INTRODUÇÃO</a>
+                </li>
+                <li class="navmenu-item">
+                    <a href="./regrasemecanicas.html">REGRAS E MECÂNICAS</a>
+                </li>
+                <li class="navmenu-item">
+                    <a href="./conjuntodecartaseconstrucaodedeck.html">CONJUNTO DE CARTAS</a>
+                </li>
+                <li class="navmenu-item">
+                    <a href="./glossario.html">GLOSSÁRIO</a>
+                </li>
+                <li class="navmenu-item">
+                    <a href="./cards.html">PRINCIPAIS CARTAS</a>
+                </li>
+            </ul>
 
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./introducao.html">INTRODUÇÃO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./regrasemecanicas.html">REGRAS E MECÂNICAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./conjuntodecartaseconstrucaodedeck.html">CONJUNTO DE CARTAS</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./glossario.html">GLOSSÁRIO</a>
-                    </li>
-                </ul>
                 <div class="hamburger-menu">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -208,23 +202,14 @@
     </main>
 
     <!--Link para topo da página-->
-    <a class="link-top" href="#intro"><i class="fas fa-arrow-up"></i></a>
+    <a class="link-top" href="#intro-page"><i class="fas fa-arrow-up"></i></a>
 
     <footer class="footer">contatos - email:armandocardos@gmail.com tel:+5591999180000</footer>
-
-    <!--Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    
     <!--Button Top JS-->
-    <script src="../script/button-top.js"></script>
-    <script src="../script/menu.js"></script>
+    <script src="../scripts/button-top.js"></script>
+    <!--Navigation Menu JS-->
+    <script src="../scripts/menu.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@ const card5 = "../images/card-5.jpeg";
 const card6 = "../images/card-6.jpeg";
 // const card7 = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129671&type=card";
 const card7 = "../images/card-7.jpeg";
-// const card8 = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129671&type=card";
+// const card8 = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149551&type=card";
 const card8 = "../images/card-8.jpeg";
 
 

@@ -12,9 +12,9 @@ const cards = [card1, card2, card3, card4];
 const buttons = document.querySelectorAll(".mainclass-buttons button");
 
 buttons.forEach(function(btn, idx) {
-   btn.addEventListener("click", function() {
-       console.log(btn);
+    btn.addEventListener("click", function() {
+        console.log(btn);
 
-       image.src = cards[idx];
-   });
+        image.src = cards[idx];
+    });
 });

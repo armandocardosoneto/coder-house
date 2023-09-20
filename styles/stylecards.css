@@ -167,8 +167,14 @@ header img {
         margin-bottom: 20px;
     }
 
+    .mainclass-buttons {
+        margin-top: 14px;
+        display: flex;
+        justify-content: space-around;
+    }
+
     .footer {
-        width: 100%;
+        width: auto;
         padding: 10px 0;
         text-align: center;
         font-weight: bolder;

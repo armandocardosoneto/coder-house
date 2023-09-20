@@ -6,47 +6,33 @@
 
 #bodyid {
     background-image: url(../images/bghome.jpg);
-    Background-position: center center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    height: 565px;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.logo-titles {
-    padding-top: 40px; 
-}
-
-header img {
-    animation: muda-logo 6s infinite;
-}
-
-@keyframes muda-logo {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    25% {
-        transform: scale(1.05) rotate(5deg);
-    }
-
-    50% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    75% {
-        transform: scale(1.05) rotate(-5deg);
-    }
-
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
+.logoclass {
+    width: 200px;
+    height: 196px;
+    margin: auto;
+    margin-top: 15px;
+    display: block;
 }
 
 header img {
     display: block;
     width: 200px;
     margin: 17px auto 0 auto;
+    animation: muda-logo 6s infinite;
+}
+@keyframes muda-logo {
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.05) rotate(5deg);}
+    50% {transform: scale(1) rotate(0deg);}
+    75% {transform: scale(1.05) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
 
 .magicclass {
@@ -54,29 +40,44 @@ header img {
     height: 40px;
     text-align: center;
 }
-
 .gatheringclass {
     width: 100%;
-    height: 35px;
+    height: 45px;
     text-align: center
+}
+
+button {
+    border: 2px;
+    padding: 5px;
+    text-decoration: solid;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color:rgba(150, 183, 184, 0.368);
+    /* box-shadow: 2px 2px rgb(175, 175, 175); */
+    box-shadow: 2px 2px rgb(240, 240, 240);
+    font-size: 14px;
+    transition: .3s;
+}
+button:hover {
+    transform: scale(1.15);
+    filter: brightness(200%);
 }
 
 .divimagens {
     width: 100%;
-    height: 175px;
+    height: auto;
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 68px;
 }
-
 .divimagens div {
     width: 20%;
-    height: 120px;
+    height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
-    transition: .3s;
+    transition:.3s;
 }
-
 .divimagens div:hover {
     transform: scale(1.15);
     filter: brightness(120%);
@@ -85,51 +86,28 @@ header img {
 .divimagens img {
     animation: muda-logo 6s infinite;
 }
-
 @keyframes muda-logo {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    25% {
-        transform: scale(1.05) rotate(5deg);
-    }
-
-    50% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    75% {
-        transform: scale(1.05) rotate(-5deg);
-    }
-
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.05) rotate(5deg);}
+    50% {transform: scale(1) rotate(0deg);}
+    75% {transform: scale(1.05) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
 
 .footer {
     width: 100%;
+    /* height: 20px; */
     text-align: center;
+    font-size: 14px;
     font-weight: bolder;
     background-color: rgb(204, 99, 99);
-    margin-top: 20px;
-    padding: 8px 0;
+    padding: 11px 0;
+    margin-top: 45px;
     border-top: 2px solid white;
 }
 
-
 /*Configuração para mobile*/
-
-@media screen and (max-width: 750px) {
-
-    .mainstyle {
-        width: auto;
-        display: flex;
-        height: 70px;
-        justify-content: space-between;
-    }
-
+@media screen and (max-width: 950px) {
     .divimagens {
         flex-direction: column;
         align-items: center;
@@ -138,6 +116,16 @@ header img {
         row-gap: 1rem;
     }
 
+    button {
+        border: 4px;
+        margin: 7px;
+        text-decoration: solid;
+        border-radius: 10px;
+        background-color:rgb(252, 252, 3);
+        font-size: 13px;
+        border: 1px solid black;
+        padding: 10x;
+    }
 
     .footer {
         width: 100%;
@@ -146,12 +134,5 @@ header img {
         margin-top: 40px;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
-        border-top: 2px solid white;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    button {
-        font-size: 10px;
     }
 }

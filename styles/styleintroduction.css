@@ -24,6 +24,11 @@
     display: block;
 }
 
+.logoclass:hover {
+    transform: scale(1.15);
+    transition: .3s;
+}
+
 header img {
     animation: muda-logo 6s infinite;
 }

@@ -164,15 +164,15 @@ header img {
         width: 100%;
         height: auto;
         margin-top: 180px;
-        margin-bottom: auto;
+        margin-bottom: 20px;
     }
 
     .footer {
         width: 100%;
-        height: auto;
-        padding: 22px 0;
+        padding: 10px 0;
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

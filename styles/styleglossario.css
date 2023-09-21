@@ -198,6 +198,11 @@ main {
         display: none;
     }
 
+    .logoclass {
+        margin: auto;
+        margin-top: 3px;
+    }
+
     .classfooter {
         width: 100%;
         height: 30px;

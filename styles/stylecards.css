@@ -157,7 +157,7 @@ header img {
     .bodyclass {
         width: auto;
         height: auto;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     .divclass {
@@ -177,9 +177,14 @@ header img {
         padding: 20px 0;
     }
 
+    .logoclass {
+        margin: auto;
+        margin-top: 10px;
+    }
+
     .footer {
         width: 100%;
-        height: 30px;
+        height: 35px;
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);

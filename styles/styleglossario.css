@@ -200,7 +200,7 @@ main {
 
     .classfooter {
         width: 100%;
-        padding: 10px 0;
+        height: 30px;
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);

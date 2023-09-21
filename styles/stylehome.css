@@ -27,12 +27,27 @@ header img {
     margin: 17px auto 0 auto;
     animation: muda-logo 6s infinite;
 }
+
 @keyframes muda-logo {
-    0% {transform: scale(1) rotate(0deg);}
-    25% {transform: scale(1.05) rotate(5deg);}
-    50% {transform: scale(1) rotate(0deg);}
-    75% {transform: scale(1.05) rotate(-5deg);}
-    100% {transform: scale(1) rotate(0deg);}
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .magicclass {
@@ -40,6 +55,7 @@ header img {
     height: 40px;
     text-align: center;
 }
+
 .gatheringclass {
     width: 100%;
     height: 45px;
@@ -52,12 +68,13 @@ button {
     text-decoration: solid;
     cursor: pointer;
     border-radius: 2px;
-    background-color:rgba(150, 183, 184, 0.368);
+    background-color: rgba(150, 183, 184, 0.368);
     /* box-shadow: 2px 2px rgb(175, 175, 175); */
     box-shadow: 2px 2px rgb(240, 240, 240);
     font-size: 14px;
     transition: .3s;
 }
+
 button:hover {
     transform: scale(1.15);
     filter: brightness(200%);
@@ -71,13 +88,15 @@ button:hover {
     justify-content: center;
     margin-bottom: 68px;
 }
+
 .divimagens div {
     width: 20%;
     height: 140px;
     padding: 20px 20px;
     opacity: 0.9;
-    transition:.3s;
+    transition: .3s;
 }
+
 .divimagens div:hover {
     transform: scale(1.15);
     filter: brightness(120%);
@@ -86,17 +105,32 @@ button:hover {
 .divimagens img {
     animation: muda-logo 6s infinite;
 }
+
 @keyframes muda-logo {
-    0% {transform: scale(1) rotate(0deg);}
-    25% {transform: scale(1.05) rotate(5deg);}
-    50% {transform: scale(1) rotate(0deg);}
-    75% {transform: scale(1.05) rotate(-5deg);}
-    100% {transform: scale(1) rotate(0deg);}
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .footer {
     width: 100%;
-    /* height: 20px; */
+    height: 20px;
     text-align: center;
     font-size: 14px;
     font-weight: bolder;
@@ -121,7 +155,7 @@ button:hover {
         margin: 7px;
         text-decoration: solid;
         border-radius: 10px;
-        background-color:rgb(252, 252, 3);
+        background-color: rgb(252, 252, 3);
         font-size: 13px;
         border: 1px solid black;
         padding: 10x;
@@ -132,7 +166,7 @@ button:hover {
         height: 40px;
         text-align: center;
         font-weight: bolder;
-        background-color: rgb(88, 133, 181);
+        background-color: rgb(204, 99, 99);
         border-top: 2px solid white;
     }
 }

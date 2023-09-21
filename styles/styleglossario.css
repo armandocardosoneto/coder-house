@@ -181,9 +181,9 @@ main {
         height: auto;
         row-gap: auto;
         margin-bottom: 25px;
-
+        margin-right: 10px;
         display: grid;
-        grid-template-columns: 390px;
+        grid-template-columns: 375px;
         grid-template-rows: auto;
         text-align: justify;
     }

@@ -103,7 +103,7 @@ header img {
     margin-top: 14px;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+
     flex-wrap: wrap;
 }
 

@@ -8,6 +8,7 @@
     background-image: url(../images/fundo.png);
     Background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bottonhome {
@@ -107,6 +108,7 @@ header img {
 }
 
 .mainclass-buttons .image-btn {
+    display: block;
     margin: 0 12px;
     padding: 8px 12px;
     border: 2px solid rgb(204, 99, 99);
@@ -172,13 +174,18 @@ hr.division {
 }
 
 /*Configuração para mobile*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .bodyclass .logoclass {
         flex-basis: 25%;
     }
 
     .subtitle {
         padding: 0 20px;
+    }
+
+    .mainclass-buttons {        
+        margin-top: 14px;
+        row-gap: 20px;
     }
 }
 
@@ -208,16 +215,6 @@ hr.division {
         margin-bottom: 20px;
     }
 
-    .mainclass-buttons {
-        width: 100%;
-        margin-top: 14px;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 20px;
-        justify-content: space-around;
-        padding: 20px 0;
-    }
-
     .logoclass {
         margin: auto;
         margin-top: 10px;
@@ -226,6 +223,8 @@ hr.division {
     .footer {
         padding: 15px 0 20px 0;
         margin-top: 40px;
+        text-align: center;
+        font-weight: bolder;
         word-break: break-word;
         background-color: rgb(88, 133, 181);
         border-top: 2px solid white;

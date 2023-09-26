@@ -98,17 +98,6 @@ header img {
     width: 100%;
 }
 
-.change-bg {
-    background-color: rgb(204, 99, 99);
-    font-size: 20px;
-    color: black;
-    padding: 40px 0;
-    border-radius: 2px;    
-    background-color: rgb(204, 99, 99);
-    box-shadow: 2px 2px rgb(175, 175, 175);
-    font-weight: bolder;
-}
-
 .footer {
     width: 100%;
     padding: 10px 0;
@@ -165,5 +154,6 @@ header img {
         text-align: center;
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
+        border-top: 2px solid white;
     }
 }

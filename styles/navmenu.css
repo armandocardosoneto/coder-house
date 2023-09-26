@@ -118,14 +118,14 @@ header {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .hamburger-menu {
         display: block;
     }
     
     /*Menu de navegação muda ao aplicar a classe "change-nav para telas menores*/
     .nav.change-nav {
-        height: 160px;
+        height: 190px;
         background-color: rgba(0, 0, 0, .75);
     }
 

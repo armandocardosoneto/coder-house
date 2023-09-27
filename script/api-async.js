@@ -39,7 +39,7 @@ async function getCards() {
         cardType.innerText = thirdCardType;
         cardImage.src = thirdCardImage;
     }
-    catch(error) {
+    catch (error) {
         console.error("Error", error);
     }
 
@@ -47,6 +47,6 @@ async function getCards() {
 }
 
 //remove card
-removeCardBtn.addEventListener("click", function() {
+removeCardBtn.addEventListener("click", function () {
     card.style.display = "none";
 });

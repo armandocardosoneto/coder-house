@@ -20,8 +20,8 @@ const image = document.querySelector(".mainclass-image img");
 const cards = [card1, card2, card3, card4, card5, card6, card7, card8];
 const buttons = document.querySelectorAll(".mainclass-buttons button");
 
-buttons.forEach(function(btn, idx) {
-    btn.addEventListener("click", function() {
+buttons.forEach(function (btn, idx) {
+    btn.addEventListener("click", function () {
         console.log(btn);
 
         image.src = cards[idx];

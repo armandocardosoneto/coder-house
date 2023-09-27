@@ -14,6 +14,7 @@ header {
     border-bottom: 2px solid white;
     transition: all .7s;
 }
+
 /*Muda o background de Menu de navegação ao fazer o scroll vertical (100px ou maior) da página*/
 .nav.change-bg {
     background-color: rgba(0, 0, 0, .95);
@@ -89,14 +90,23 @@ header {
     transform-origin: right;
     transition: all .5s;
 }
+
 .hamburger-menu .line:last-child {
     margin-bottom: 0;
 }
 
 @keyframes bounce {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    100% {transform: scale(1);}
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /*O hamburger-menu muda ao ser aplicada a classe change-menu*/
@@ -122,7 +132,7 @@ header {
     .hamburger-menu {
         display: block;
     }
-    
+
     /*Menu de navegação muda ao aplicar a classe "change-nav para telas menores*/
     .nav.change-nav {
         height: 190px;
@@ -136,12 +146,12 @@ header {
         row-gap: 12px;
     }
 
-    .navmenu a {        
+    .navmenu a {
         opacity: 0;
         visibility: hidden;
     }
 
-    .nav.change-nav .navmenu a {        
+    .nav.change-nav .navmenu a {
         opacity: 1;
         visibility: visible;
         transition: all .05s .5s;

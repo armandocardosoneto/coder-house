@@ -1,7 +1,7 @@
 * {
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .logo-titles {
-    padding-top: 60px; 
+    padding-top: 60px;
 }
 
 .logoclass {
@@ -32,12 +32,27 @@
 header img {
     animation: muda-logo 6s infinite;
 }
+
 @keyframes muda-logo {
-    0% {transform: scale(1) rotate(0deg);}
-    25% {transform: scale(1.05) rotate(5deg);}
-    50% {transform: scale(1) rotate(0deg);}
-    75% {transform: scale(1.05) rotate(-5deg);}
-    100% {transform: scale(1) rotate(0deg);}
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .magicclass {
@@ -94,7 +109,7 @@ h4 {
     border: 2px solid white;
     border-radius: 5px;
     text-decoration: solid;
-    background-color:rgba(150, 183, 184, 0.368);  
+    background-color: rgba(150, 183, 184, 0.368);
 }
 
 .maintipos div h4 {
@@ -164,7 +179,7 @@ h4 {
         padding: 10px;
         text-decoration: solid;
         border-radius: 10px;
-        background-color:rgb(252, 3, 3);
+        background-color: rgb(252, 3, 3);
     }
 
     .footer {

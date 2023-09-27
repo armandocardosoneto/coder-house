@@ -23,16 +23,27 @@ html {
     transition: all .5s;
     animation: bounce 2s ease-in-out infinite;
 }
+
 @keyframes bounce {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1);}
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
+
 .link-top:hover {
     background-color: black;
     color: #db9004;
     border: 2px solid #db9004;
 }
+
 .show-link {
     visibility: visible;
     opacity: 1;

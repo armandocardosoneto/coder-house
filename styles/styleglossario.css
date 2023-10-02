@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 .bodyclass {
@@ -9,6 +10,7 @@
     Background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 header img {
@@ -80,6 +82,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    margin-top: 20px;
 }
 
 .divclass {

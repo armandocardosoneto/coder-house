@@ -2,8 +2,8 @@
 const cards = [
     {
         img: "../images/card-1.jpeg",
-        title: "Angel of Mercy",
-        alt: "Creature - Angel"
+        title: "Anjo de Misericórdia",
+        alt: "Criatura — Anjo"
     },
     {
         img: "../images/card-2.jpeg",
@@ -48,7 +48,7 @@ const gameCards = document.querySelector(".game-cards");
 cards.forEach((item) => {
     gameCards.innerHTML += `
         <figure class="card-item">
-            <img src="${item.img}" title="${item.title}" alt="${item.alt}">
+            <img src="${item.img}" title="${item.title}" alt="${item.alt}" flavor="${item.flavor}" text="${item.text}">
         </figure>
     `;
 });

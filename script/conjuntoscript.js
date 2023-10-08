@@ -89,7 +89,7 @@ let counter = 0;
 const shoModal = (idx) => {
     modal.classList.add("show");
 
-    const title = cardImages[idx].getAttribute("title");        
+    const title = cardImages[idx].getAttribute("title");
     modalTitle.innerText = title;
 
     const type = cardImages[idx].getAttribute("alt");
@@ -112,7 +112,7 @@ cardImages.forEach((item, index) => {
 //Botões para retroceder ou avançar as imagens
 buttonLeft.addEventListener("click", () => {
     counter--;
-    if(counter < 0) {
+    if (counter < 0) {
         counter = cardImages.length - 1;
     }
 
@@ -121,10 +121,10 @@ buttonLeft.addEventListener("click", () => {
 
 buttonRight.addEventListener("click", () => {
     counter++;
-    if(counter > cardImages.length - 1) {
+    if (counter > cardImages.length - 1) {
         counter = 0;
     }
-    
+
     shoModal(counter);
 });
 
@@ -137,7 +137,7 @@ modalCloseBtn.addEventListener("click", () => {
 document.addEventListener("click", (e) => {
     const target = e.target;
 
-    if(target.classList.contains("show")) {
+    if (target.classList.contains("show")) {
         modal.classList.remove("show");
     }
 });

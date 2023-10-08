@@ -7,38 +7,38 @@ const cards = [
     },
     {
         img: "../images/card-2.jpeg",
-        title: "Angelic Blessing",
-        alt: "Sorcery"
+        title: "Bênção Angelical",
+        alt: "Feitiço"
     },
     {
         img: "../images/card-3.jpeg",
-        title: "Angelic Chorus",
-        alt: "Enchantment"
+        title: "Coro Angelical",
+        alt: "Encantamento"
     },
     {
         img: "../images/card-4.jpeg",
-        title: "Angelic Wall",
-        alt: "Creature - Wall"
+        title: "Barreira Angelical",
+        alt: "Criatura - Barreira"
     },
     {
         img: "../images/card-5.jpeg",
-        title: "Aven Cloudchaser",
-        alt: "Creature - Bold Soldier"
+        title: "Caça-Nuvens Aviano",
+        alt: "Criatura - Ave Soldado"
     },
     {
         img: "../images/card-6.jpeg",
-        title: "Balista Squad",
-        alt: "Creature - Human Rebel"
+        title: "Esquadrão de Balista",
+        alt: "Criatura — Humano Rebelde"
     },
     {
         img: "../images/card-7.jpeg",
-        title: "Beacon of Immortality",
-        alt: "Instant"
+        title: "Guia da Imortalidade",
+        alt: "Mágica Instantânea"
     },
     {
         img: "../images/card-8.jpeg",
-        title: "Ancestor's Chosen",
-        alt: "Creature - Human Cleric"
+        title: "Eleito da Ancestral",
+        alt: "Criatura — Humano Clérigo"
     }
 ]
 

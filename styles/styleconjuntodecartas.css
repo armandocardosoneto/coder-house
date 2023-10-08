@@ -178,7 +178,7 @@ span#btn-right i:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 
-span#btn-left i {    
+span#btn-left i {
     top: 50%;
     left: -17.5%;
 }
@@ -248,7 +248,7 @@ span#btn-right i {
     span#btn-left i {
         left: -15.5%;
     }
-    
+
     span#btn-right i {
         right: -17%;
     }
@@ -278,7 +278,7 @@ span#btn-right i {
     span#btn-left i {
         left: -14%;
     }
-    
+
     span#btn-right i {
         right: -15.5%;
     }

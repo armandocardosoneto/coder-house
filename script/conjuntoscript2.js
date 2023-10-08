@@ -21,7 +21,7 @@ cardImages.forEach((item, idx) => {
     item.addEventListener("click", () => {
         modal.classList.add("show");
 
-        const title = cardImages[idx].getAttribute("title");        
+        const title = cardImages[idx].getAttribute("title");
         modalTitle.innerText = title;
 
         const type = cardImages[idx].getAttribute("alt");

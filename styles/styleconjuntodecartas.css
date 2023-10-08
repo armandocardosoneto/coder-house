@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body {
+    position: relative;
+}
+
 .bodyclass {
     background-image: url(../images/fundo.png);
     Background-position: center center;
@@ -100,7 +104,90 @@ header img {
     box-shadow: -4px -4px 8px black;
     display: block;
     width: 100%;
+    cursor: pointer;
 }
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.show.modal {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.modal-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+    padding: 25px 35px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgb(204, 99, 99);
+}
+
+.modal-close {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(1.6);
+    cursor: pointer;
+}
+
+.modal .card-name,
+.modal .card-type {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.modal .card-image img {
+    border-radius: 13px;
+    border: 2px solid rgb(204, 99, 99);
+    margin-top: 5px;
+}
+
+span#btn-left i,
+span#btn-right i {
+    padding: 7px 8px;
+    transform: scale(1.5);
+    background-color: rgba(255, 255, 255, .5);
+    border: 3px solid rgb(204, 99, 99);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all .5s;
+}
+
+span#btn-left i:hover,
+span#btn-right i:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+span#btn-left i {    
+    top: 50%;
+    left: -17.5%;
+}
+
+span#btn-right i {
+    top: 50%;
+    right: -19%;
+}
+
 
 .footer {
     width: 100%;
@@ -152,6 +239,20 @@ header img {
         padding: 0 4rem;
     }
 
+    span#btn-left i,
+    span#btn-right i {
+        padding: 6px 8px;
+        transform: scale(1.3);
+    }
+
+    span#btn-left i {
+        left: -15.5%;
+    }
+    
+    span#btn-right i {
+        right: -17%;
+    }
+
     .footer {
         width: 100%;
         padding: 12px 0;
@@ -159,5 +260,32 @@ header img {
         font-weight: bolder;
         background-color: rgb(88, 133, 181);
         border-top: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-card {
+        max-width: 220px;
+        padding: 20px 30px;
+    }
+
+    span#btn-left i,
+    span#btn-right i {
+        padding: 5px 7px;
+        transform: scale(1.1);
+    }
+
+    span#btn-left i {
+        left: -14%;
+    }
+    
+    span#btn-right i {
+        right: -15.5%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .modal-card {
+        padding: 10px 25px;
     }
 }
